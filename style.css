@@ -31,6 +31,12 @@ main {
     flex-grow: 1;
 
 }
+h1 >img {
+
+    height: 130px;
+    width: 250px;
+
+}
 
 
 .galeria {
