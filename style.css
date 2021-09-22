@@ -62,7 +62,7 @@ main {
 .fotos {
 
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgb(46, 46, 46);
+    border: 3px solid rgb(156, 156, 156);
 }
 
 img {
