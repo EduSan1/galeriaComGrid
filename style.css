@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+
+    
+}
+
+
+header {
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lightcyan;
+}
+
+main {
+
+    flex-grow: 1;
+
+}
+
+
+.galeria {
+
+
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "item1 item2 item2 item3"
+    "item1 item4 item5 item3"
+    "item1 item6 item8 item8"
+    "item1 item7 item8 item8"
+    ;
+    grid-auto-rows: 20vh;
+    padding: 10px;
+    
+
+}
+
+.fotos:nth-child(1) {grid-area: item1;}
+.fotos:nth-child(2) {grid-area: item2;}
+.fotos:nth-child(3) {grid-area: item3;}
+.fotos:nth-child(4) {grid-area: item4;}
+.fotos:nth-child(5) {grid-area: item5;}
+.fotos:nth-child(6) {grid-area: item6;}
+.fotos:nth-child(7) {grid-area: item7;}
+.fotos:nth-child(8) {grid-area: item8;}
+
+.fotos {
+
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgb(46, 46, 46);
+}
+
+img {
+
+    height: 100%;
+    width: 100%;
+    transition: all .4s linear;
+    object-fit: cover;
+
+}
+
+.fotos img:hover {
+
+    transform: scale(110%) ;
+
+}
