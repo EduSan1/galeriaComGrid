@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing:border-box;
+    
 
 }
 
@@ -11,8 +12,11 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: black;
-
+    background-color: bisque;
+    background-image: url(fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    
     
 }
 
@@ -24,11 +28,13 @@ header {
     justify-content: center;
     align-items: center;
     color: lightcyan;
+    
 }
 
 main {
 
     flex-grow: 1;
+    
 
 }
 h1 >img {
@@ -53,6 +59,7 @@ h1 >img {
     grid-auto-rows: 20vh;
     padding: 10px;
     
+    
 
 }
 
@@ -68,7 +75,16 @@ h1 >img {
 .fotos {
 
     overflow: hidden;
-    border: 3px solid rgb(156, 156, 156);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(236, 236, 236);
+
+    transition: all 0.8s;
+}
+.fotos:hover {
+
+    box-shadow: 0px 0px 20px rgb(236, 236, 236);
+
 }
 
 img {
@@ -77,11 +93,28 @@ img {
     width: 100%;
     transition: all .4s linear;
     object-fit: cover;
-
+    /*filter: blur(5px);*/
+    /* filter: grayscale(0.8); */
+    /* filter: sepia(1); */
+    /* filter: saturate(20000%); */
+    /* filter: hue-rotate(600deg); */
+    /* filter: invert(.8); */
+    filter: opacity(.75) ; 
+    /* filter: brightness(0.5); */
+    /* filter: contrast(200%); */
 }
 
 .fotos img:hover {
 
     transform: scale(110%) ;
+    /* filter: blur(0px); */
+    /* filter: grayscale(0); */
+    /* filter: sepia(0); */
+    /* filter: saturate(100%); */
+    /* filter: hue-rotate(0deg); */
+    /* filter: invert(0); */
+     filter: opacity(1); 
+    /* filter: brightness(1); */
+    /* filter: contrast(100%); */
 
 }
